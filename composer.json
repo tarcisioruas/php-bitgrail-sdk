@@ -1,5 +1,5 @@
 {
-  "name": "tarcisioruas/bitgrail",
+  "name": "tarcisioruas/php-bitgrail-sdk",
   "license": "MIT",
   "description": "BitGrail API SDK used to communicate with BitGrail Exchange",
   "keywords": ["shopfacil", "registro" , "boleto" , "bradesco"],
