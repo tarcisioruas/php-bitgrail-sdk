@@ -1,8 +1,8 @@
 {
   "name": "tarcisioruas/php-bitgrail-sdk",
   "license": "MIT",
-  "description": "BitGrail API SDK used to communicate with BitGrail Exchange",
-  "keywords": ["bitgrail", "api" , "sdk" ],
+  "description": "PHP BitGrail API is a PHP library for the BitGrail API designed to be easy to use.",
+  "keywords": ["BitGrail", "api" , "sdk" ],
   "homepage": "https://github.com/tarcisioruas/php-bitgrail-sdk",
   "require": {
     "php" : ">=5.4"
