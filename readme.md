@@ -1,6 +1,6 @@
 # PHP BITGRAIL API SDK
 
-This project is designed to help you make your own projects that interact with the [Bitgrail API](https://bitgrail.com/api-documentation). You can register buy or sell order, cancel orders, request deposit address, withdraws and others features. This project seeks to have complete API coverage.
+This project is designed to help you make your own projects that interact with the [Bitgrail API](https://bitgrail.com/api-documentation). You can register buy, sell or cancel orders, request deposit address, withdraws and others features. This project seeks to have complete API coverage.
 
 #### Installation
 ```
