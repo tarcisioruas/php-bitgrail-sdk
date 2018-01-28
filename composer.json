@@ -1,0 +1,29 @@
+{
+  "name": "tarcisioruas/bitgrail",
+  "license": "MIT",
+  "description": "BitGrail API SDK used to communicate with BitGrail Exchange",
+  "keywords": ["shopfacil", "registro" , "boleto" , "bradesco"],
+  "homepage": "https://github.com/tarcisioruas/bitgrail",
+  "require": {
+    "php" : ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-0": {
+      "BitGrail": "src"
+    },
+    "psr-4": {
+      "BitGrail\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "BitGrail": "tests"
+    },
+    "psr-4": {
+      "BitGrail\\": "src/"
+    }
+  }
+}
