@@ -1,8 +1,5 @@
 # PHP BITGRAIL API SDK
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/tarcisioruas/php-bitgrail-api.svg)](#)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/tarcisio/php-bitgrail-api.svg)](https://packagist.org/packages/jaggedsoft/php-binance-api)
-
 This project is designed to help you make your own projects that interact with the [Bitgrail API](https://bitgrail.com/api-documentation). You can register buy or sell order, cancel orders, request deposit address, withdraws and others features. This project seeks to have complete API coverage.
 
 #### Installation
@@ -40,7 +37,7 @@ Setting security params.
 ...
 
 /*
-* You can set yours API KEY and API SECRET at Envirolment Variables 
+* You can set yours API KEY and API SECRET at Environment Variables 
 * or put that in a main file, like index.php.
 */
 putenv('BITGRAIL_API_KEY=YourApiKey');
