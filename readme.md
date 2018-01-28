@@ -19,7 +19,7 @@ php composer.phar install
 ```
 Composer not found? Use this command instead:
 ```
-php composer.phar require "jaggedsoft/php-binance-api @dev"
+php composer.phar require "tarcisioruas/php-bitgrail-sdk"
 ```
 
 #### Windows:
