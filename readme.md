@@ -55,7 +55,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
-$api = new BitGrail\Markets();
+$api = new \BitGrail\Markets();
 $markets = $api->call();
 var_dump($markets);
 
@@ -71,7 +71,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //listing balances
-$api = new BitGrail\Balances();
+$api = new \BitGrail\Balances();
 $balances = $api->call();
 var_dump($balances);
 ```
@@ -86,7 +86,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //getting ticker
-$api = new BitGrail\Ticker('BTC-XRB');
+$api = new \BitGrail\Ticker('BTC-XRB');
 $ticker = $api->call();
 var_dump($ticker);
 ```
@@ -101,7 +101,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //listing order book
-$api = new BitGrail\OrderBook('BTC-XRB');
+$api = new \BitGrail\OrderBook('BTC-XRB');
 $book = $api->call();
 var_dump($book);
 ```
@@ -116,7 +116,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //listing trade history
-$api = new BitGrail\TradeHistory('BTC-XRB');
+$api = new \BitGrail\TradeHistory('BTC-XRB');
 $tradeHistory = $api->call();
 var_dump($tradeHistories);
 ```
@@ -131,7 +131,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //listing the opened orders
-$api = new BitGrail\OpenedOrders();
+$api = new \BitGrail\OpenedOrders();
 $opened = $api->call();
 var_dump($opened);
 ```
@@ -146,7 +146,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //registering a buy order
-$api = new BitGrail\Buy();
+$api = new \BitGrail\Buy();
 $buyOrder = $api->call([
             'market' => 'BTC-XRB',
             'amount' => 1,
@@ -164,7 +164,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //regitering a sell order
-$api = new BitGrail\Sell();
+$api = new \BitGrail\Sell();
 $sellOrder = $api->call([
             'market' => 'BTC-XRB',
             'amount' => 1,
@@ -182,7 +182,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //canceling a order
-$api = new BitGrail\CancelOrder();
+$api = new \BitGrail\CancelOrder();
 $response = $api->call([
             'id' => 1 //Order Id
         ]);
@@ -198,7 +198,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //listing user latest trades
-$api = new BitGrail\LatestTrades();
+$api = new \BitGrail\LatestTrades();
 $trades = $api->call();
 var_dump($trades);
 ```
@@ -212,7 +212,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //getting deposit address
-$api = new BitGrail\DepositAddress();
+$api = new \BitGrail\DepositAddress();
 $address = $api->call(['coin' => 'XRB']);
 var_dump($address);
 ```
@@ -226,7 +226,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //getting a deposit address
-$api = new BitGrail\DepositHistory();
+$api = new \BitGrail\DepositHistory();
 $depositHistory = $api->call(['coin' => 'XRB']);
 var_dump($depositHistory);
 ```
@@ -240,7 +240,7 @@ require 'vendor/autoload.php';
 putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 //withdraw
-$api = new BitGrail\Withdraw();
+$api = new \BitGrail\Withdraw();
 $withdraw = $api->call([
             'coin' => 'XRB',
             'amount' => 1, //amount of coins to send 
@@ -259,7 +259,7 @@ putenv('BITGRAIL_API_KEY=YourApiKey');
 putenv('BITGRAIL_API_SECRET=YourSecret');
 
 //listing withdraw history
-$api = new BitGrail\WithdrawHistory();
+$api = new \BitGrail\WithdrawHistory();
 $withdrawHistory = $api->call(['coin' => 'XBR']);
 var_dump($withdrawHistory);
 ```
